@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap"
+      rel="stylesheet"
+    /></head>
+  <body>
+    <h1 class="title">Formulário de Registro</h1>
+    <section class="form">
+      <form method="POST" action="handle-week-3.php">
+        <div class="form__group">
+          <label class="form__label" for="first_name">Nome</label>
+          <input
+            minlength="2"
+            placeholder="Digite Seu Nome"
+            id="first_name"
+            type="text"
+            name="first_name"
+          />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="last_name">Sobrenome</label>
+          <input
+            minlength="2"
+            placeholder="Digite Seu Sobrenome"
+            id="last_name"
+            for="last_name"
+            type="text"
+            name="last_name"
+            
+          
+          />
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="city">Cidade</label>
+          <input
+            name="city"
+            placeholder="Digite Sua Cidade"
+            id="city"
+            type="text"
+          />
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="province">Pais</label>
+          <select name="province" id="province">
+            <option value="">Digite Seu Pais</option>
+            <option value="Brazil">Brasil</option>
+            <option value="Canada">Canadá</option>
+            <option value="China">China</option>
+            <option value="France">França</option>
+            <option value="Germany">Alemanha</option>
+            <option value="United states">Estados Unidos</option>
+          </select>
+        </div>
+
+        <div class="btn__container">
+          <input
+            value="submit"
+            name="submit"
+            id="submit"
+            class="form__btn"
+            type="submit"
+          />
+          <button class="form__btn" type="reset">Clear</button>
+        </div>
+      </form>
+    </section>
+    
+</body>
+</html>
